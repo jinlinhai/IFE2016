@@ -461,23 +461,21 @@ header time
 
 .part_r .bottom-r p:before
 {	
-	content: "";
+	content: url(../images/vowel_l.png);
 	position: absolute;
 	width: 26px;
 	height: 22px;
-	top: 15px;
-	left: 15px;
-	background: url(../images/vowel_l.png) no-repeat;
+	top: 8px;
+	left: -18px;
 }
 .part_r .bottom-r p:after
 {	
-	content: "";
+	content: url(../images/vowel_r.png);
 	position: absolute;
 	width: 26px;
 	height: 22px;
 	bottom: 15px;
-	right: 15px;
-	background: url(../images/vowel_r.png) no-repeat;
+	right: 41px;
 }
 
 
