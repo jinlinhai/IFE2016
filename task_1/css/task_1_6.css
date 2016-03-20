@@ -448,28 +448,6 @@ header time
 	position: relative;
 	overflow: hidden;
 }
-
-.part_r .bottom-r i
-{	
-	position: absolute;
-	width: 26px;
-	height: 22px;
-}
-
-.part_r .bottom-r i:first-child
-{
-	top: 15px;
-	left: 15px;
-	background: url(../images/vowel_l.png) no-repeat;
-}
-
-.part_r .bottom-r i:last-child
-{
-	bottom: 15px;
-	right: 15px;
-	background: url(../images/vowel_r.png) no-repeat;
-}
-
 .part_r .bottom-r p
 {
 	font-size: 12px;
@@ -479,6 +457,27 @@ header time
 	margin: 15px;
 	color: #5a5b5b;
 	word-break: break-all;
+}
+
+.part_r .bottom-r p:before
+{	
+	content: "";
+	position: absolute;
+	width: 26px;
+	height: 22px;
+	top: 15px;
+	left: 15px;
+	background: url(../images/vowel_l.png) no-repeat;
+}
+.part_r .bottom-r p:after
+{	
+	content: "";
+	position: absolute;
+	width: 26px;
+	height: 22px;
+	bottom: 15px;
+	right: 15px;
+	background: url(../images/vowel_r.png) no-repeat;
 }
 
 
