@@ -18,19 +18,6 @@ body
 	color: #fff;
 }
 
-/*清除浮动*/
-.nav:before,.nav:after
-{
-	content: " ";
-	display: block;
-}
-
-/*清除浮动*/
-.nav:after
-{
-	clear: both;
-}
-
 .nav h1
 {
 	float: left;
