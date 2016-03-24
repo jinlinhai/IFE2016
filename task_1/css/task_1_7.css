@@ -121,13 +121,13 @@ header nav ul li a:hover
     color: #fff;
     text-align: center;
     background: #e74f4d;
-    transition: background-color .3s;
-    -webkit-transition:background-color .3s;
 }
 
 .banner .wrap a:hover
 {
     background: #e64442;
+    transition: background-color .3s;
+    -webkit-transition:background-color .3s;
 }
 
 /*banner end*/
@@ -346,8 +346,6 @@ header nav ul li a:hover
     letter-spacing: 20px;
     text-align: center;
     background: #e74f4d;
-    transition: background-color .3s;
-    -webkit-transition:background .3s;
 }
 /*hover事件*/
 .select:hover
@@ -374,6 +372,8 @@ header nav ul li a:hover
 .select-wrap .search-btn:hover
 {
     background: #e64442;
+    transition: background-color .3s;
+    -webkit-transition:background .3s;
 }
 
 /*search end*/
@@ -411,14 +411,15 @@ header nav ul li a:hover
     box-shadow: 1px 1px 2px #dadada;
     -webkit-box-shadow:1px 1px 2px #dadada;
     -moz-box-shadow:1px 1px 2px #dadada;
-    transition: all ease .3s;
-    -webkit-transition: all ease .3s;
 }
 .active .wrap figure a:hover
 {
     box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+
 }
 .active .wrap figure img
 {
@@ -515,8 +516,6 @@ header nav ul li a:hover
     line-height: 33px;
     color: #e25e62;
     border: 1px solid #e25e62;
-    transition: all .3s;
-    -webkit-transition:all .3s;
 }
 .content-text ul
 {
@@ -543,6 +542,8 @@ header nav ul li a:hover
 {
     color: #fff;
     background: #e25e62;
+    transition: all .3s;
+    -webkit-transition:all .3s;
 }
 
 /*active-info end*/
@@ -630,16 +631,22 @@ header nav ul li a:hover
     color: #e74f4d;
     background: #fff;
     border: 1px solid #e74f4d;
+    transition: all .5s;
+    -webkit-transition:all .5s;
 }
 .column .item2 .wrap a:hover
 {
     color: #fff;
     background: #e74f4d;
     border: 1px solid #fff;
+    transition: all .5s;
+    -webkit-transition:all .5s;
 }
 .column .itemlist:hover .newtime
 {
     width: 90px;
+    transition: width .3s;
+    -webkit-transition:width 1s;
 }
 
 /*column end*/
