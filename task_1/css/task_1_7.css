@@ -745,9 +745,9 @@ header nav ul li a:hover
 .joinus .request .description
 {
     width: 640px;
-    height: 120px;
-    padding: 0;
-    text-indent: 5px;
+    height: 100px;
+    padding: 10px 0; 
+    text-indent: 10px;
     background: #ededef;
     resize: none;
     border: none;
