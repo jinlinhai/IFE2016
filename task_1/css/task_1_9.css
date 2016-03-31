@@ -954,7 +954,8 @@ a:hover{
 }
 
 .brandstop table td,.brandstop table th{
-    height: 26px;
+    height: 25px;
+    line-height: 25px;
     text-align: center;
     border: 1px solid #aaa;
 }
