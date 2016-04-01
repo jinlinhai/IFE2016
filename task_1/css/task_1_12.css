@@ -1,0 +1,125 @@
+body{
+    display: flex;
+}
+.container{
+    margin: auto;
+}
+
+/*table 使用css3选择器*/
+table{
+    margin: 20px auto;
+    font-weight: bold;
+}
+
+th,td{
+    height: 18px;
+    padding: 0 5px;
+    line-height: 18px;
+    border: 1px solid #fff;
+}
+
+th{
+    background: #000;
+    color: #fff;
+    text-align: left;
+}
+
+tr:nth-child(2n+1){
+    background: #aaa;
+}
+
+tr:nth-child(2),tr:nth-child(3),tr:nth-child(4){
+    color: red;
+}
+
+/*input*/
+.wrap{
+    text-align: center;
+}
+
+input{
+    width: 100px;
+    transition: transform ease-in-out 3s;
+}
+
+input:focus{
+    transform: scale(1.5,1);
+}
+
+
+/*图片轮播开始*/
+.banner{
+    position: relative;
+    width: 250px;
+    height: 100px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.picture{
+    width: 300%;
+    position: relative;
+}
+
+.picture li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 250px;
+    height: 100px;
+}
+
+.picture li:first-child{
+    background: rgb(0,192,228);
+}
+
+.picture li:nth-child(2){
+    background: rgb(91,218,135);
+}
+
+.picture li:nth-child(3){
+    background: rgb(88,128,248);
+}
+
+.tab{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    z-index: 100;
+}
+
+.tab li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin:0 5px;
+    background: #fff;
+    opacity: 0.6;
+}
+
+.tab li a{
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    width: 100%;
+    height: 100%;
+    color: #000;
+}
+
+/*设置动画效果*/
+@keyframes scroll{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.picture li:target{
+    z-index: 10;
+    animation: scroll 1s ease-in-out;
+}
