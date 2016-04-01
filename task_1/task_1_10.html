@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+    <title>任务十</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+.flex-container{
+    display: -webkit-flex;/*safari*/
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    
+    min-width: 500px;
+    padding: 20px;
+    border: 1px solid #333;
+}
+
+.flex-item{
+    width: 150px;
+    border: 1px solid #f00;
+}
+
+.item1{
+    height: 120px;
+}
+
+.item2{
+    height: 100px;
+}
+
+.item3{
+    height: 40px;
+}
+
+.item4{
+    height: 200px;
+    border: 1px solid #00f;
+}
+
+@media screen and (max-width: 640px) {
+    .flex-container{
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+
+    .flex-item{
+        order: 2;
+    }
+
+    .item4{
+        order: 1;
+        margin-bottom: 20px;
+    }
+}
+
+</style>
+
+</head>
+<body>
+    <ul class="flex-container">
+        <li class="flex-item item1"></li>
+        <li class="flex-item item2"></li>
+        <li class="flex-item item3"></li>
+        <li class="flex-item item4"></li>
+    </ul>
+</body>
+</html>
