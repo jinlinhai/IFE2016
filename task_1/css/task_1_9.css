@@ -23,8 +23,8 @@ a:hover{
 
 .topnav .logo a{
     display: inline-block;
-    /*display:inline;*/
-    /*zoom:1;*/
+    *display:inline;
+    *zoom:1;
     width: 100%;
     height: 100%;
     text-indent: -1000px;
@@ -81,8 +81,8 @@ a:hover{
 
 .topnav-login a i{
     display: inline-block;
-    /*display: inline;*/
-    /*zoom:1;*/
+    *display: inline;
+    *zoom:1;
     width: 15px;
     height: 16px;
     margin: -1px 6px 0 0;
@@ -158,8 +158,8 @@ a:hover{
 
 .user-social a{
     display: inline-block;
-    /*display:inline;*/
-    /*zoom:1;*/
+    *display:inline;
+    *zoom:1;
     color: #dfdedf;
     margin: 10px 40px 0 20px;
 }
@@ -199,8 +199,8 @@ a:hover{
 .user-status ul li a:before{
     content: "";
     display: inline-block;
-    /*display: inline;*/
-    /*zoom:1;*/
+    *display: inline;
+    *zoom:1;
     width: 12px;
     height: 11px;
     margin-right: 15px;
@@ -226,8 +226,8 @@ a:hover{
 .user-status .submain li a:before{
     content: "";
     display: inline-block;
-    /*display: inline;*/
-    /*zoom:1;*/
+    *display: inline;
+    *zoom:1;
     width: 30px;
     height: 12px;
     margin-right: 5px;
@@ -242,8 +242,8 @@ a:hover{
 .user-status .submain .minor li a:before{
     content: "";
     display: inline-block;
-    /*display: inline;*/
-    /*zoom:1;*/
+    *display: inline;
+    *zoom:1;
     width: 10px;
     height: 11px;
     margin-right: 5px;
@@ -300,8 +300,8 @@ a:hover{
 .select-style{
     position: relative;
     display: inline-block;
-    /*display: inline;*/
-    /*zoom:1;*/
+    *display: inline;
+    *zoom:1;
     border: 1px solid #ddd;
     cursor: pointer;
 }
@@ -412,8 +412,8 @@ a:hover{
 
 .date,.time-out,.persons,.deal{
     display: inline-block;
-    /*display: inline;*/
-    /*zoom:1;*/
+    *display: inline;
+    *zoom:1;
     margin-bottom: 10px;
 }
 
@@ -564,8 +564,8 @@ a:hover{
 
 .query-history-btn i{
     display: inline-block;
-    /*display: inline;*/
-    /*zoom:1;*/
+    *display: inline;
+    *zoom:1;
     width: 32px;
     height: 32px;
     margin:0 10px 0 -40px;
@@ -837,8 +837,8 @@ a:hover{
 .calendar-settime  .select-lr{
     position: relative;
     display: inline-block;
-    /*display: inline;*/
-    /*zoom:1;*/
+    *display: inline;
+    *zoom:1;
     height: 20px;
     line-height: 20px;
     border: 1px solid #ddd;
@@ -975,8 +975,8 @@ a:hover{
 
 .brandstop table td .bar{
     display: inline-block;
-    /*display:inline;*/
-    /*zoom:1;*/
+    *display:inline;
+    *zoom:1;
     width: 168px;
     height: 4px;
     margin-left: 10px;
