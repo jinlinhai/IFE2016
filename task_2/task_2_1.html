@@ -18,9 +18,16 @@
   var oBtn=document.getElementById('button'),
       oValue=document.getElementById('aqi-input'),
       oTxt=document.getElementById('aqi-display');
-  /* 给按钮button绑定一个点击事件*/
+
+  /*获取aqi-input输入的值，并显示在aqi-display中*/
   oBtn.onclick=function(){
-    oTxt.innerHTML=oValue.value;
+    if (oValue.value) {
+      oTxt.innerHTML=oValue.value;
+    }else{
+      //当输入值为空，定位焦点，并提示输入
+        oValue.focus();
+        oTxt.innerHTML="请输入";
+    }
   };
 })();
 
