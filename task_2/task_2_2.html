@@ -24,8 +24,6 @@ var aqiData = [
   ["西安", 100],
 ];
 
-var oList=document.getElementById('aqi-list');
-
 (function () {
 
   /*遍历读取aqiData中各个城市的数据*/
@@ -39,6 +37,7 @@ var oList=document.getElementById('aqi-list');
     });
 
   /*将空气质量指数大于60的城市显示到aqi-list的列表中*/
+  var oList=document.getElementById('aqi-list');
   for (var i = 0; i < oTop.length; i++) {
     var oLi=document.createElement('li');
     oLi.innerHTML="第"+(i+1)+"名："+oTop[i][0]+","+oTop[i][1];
