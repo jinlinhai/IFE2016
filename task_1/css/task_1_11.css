@@ -1,6 +1,7 @@
 body{
     width: 10rem;
     margin: 0 auto;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;;
     background: #f8f8f8;
 }
 
@@ -41,7 +42,6 @@ header a .fanhui{
 nav{
     width: 100%;
     height: 1.17rem;
-    font-size: .38rem;
     color: #000;
     line-height: 1.17rem;
     background: #fff;
@@ -51,6 +51,7 @@ nav{
 nav ul li{
     float: left;
     width: 20%;
+    font-size: .38rem;
     text-align: center;
 }
 
@@ -92,17 +93,29 @@ nav ul .on{
 }
 
 .tab ul{
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-around;
+    display: -webkit-box;/* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: flex;/*x新语法*/
+    -webkit-box-pack: justify;
+    -webkit-justify-content:space-around;
+    justify-content:space-around;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    align-items: center;
+
     border-bottom: 0.04rem solid #ddd;
 }
 
 .tab ul li{
     width: 1.21rem;
     margin: .45rem 0;
-    font-size: .36rem;
     text-align: center;
+}
+
+.tab ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: .36rem;
 }
 
 .tab ul li .dingdan{
@@ -172,7 +185,7 @@ nav ul .on{
 .group{
     clear: both;
     margin: .35rem auto 0;
-    padding: 0 .30rem;
+    padding: 0 2.8%;
     background: #fff;
 }
 
@@ -186,54 +199,50 @@ nav ul .on{
 
 .group .content{
     margin-top:.4rem; 
-    overflow: hidden;
 }
 
-.group .list{
-    clear: both;
-    margin-bottom: .25rem;
-}
-
-.group .list-img{
-    float: left;
-    width: 2.26rem;
-    height: 2.26rem;
-    border: .02rem solid #fcb22f;
-}
-
-.group .list-img img{
+.list-img a{
+    display: block;
     width: 100%;
-    height: 100%;    
-}
-
-.group .list-txt{
-    float: left;
-    width: 7.05rem;
-    height: 2.32rem;
-    font-size: .34rem;
-}
-
-.group .list-txt ul{
     height: 100%;
-    margin-left:.25rem; 
-    display: flex;
-    flex-flow: row wrap; 
-    justify-content: space-between;
-    align-content: space-between;
 }
 
-.group .list-txt ul li{
-    width: 3.27rem;
-    height: 1rem;
+.list-img{
+    float: left;
+    width: 2.4rem;
+    height: 2.36rem;
+    box-sizing: border-box;
+    border: .03rem solid #fbc058;
+}
+
+.list-img img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.list-txt{
+    float: right;
+    width: 72%;
+    height: 2.6rem;
+}
+
+.list-txt li{
+    display: inline-block;
+    width: 47.5%;
+    height: 1.05rem;
+    margin-right: 2%;
+    margin-bottom: .25rem;
+    font-size: .38rem;
     text-align: center;
-    line-height: 1rem;
+    line-height: 1.04rem;
     background: #f8f8f8;
-    overflow: hidden;
 }
 
-.group .list-txt ul li:nth-child(3),.group .list-txt ul li:nth-child(4){
-    margin-bottom:0;
+.list-txt li:nth-child(2),.list-txt li:nth-child(4){
+    margin-right: 0;
 }
+
 /*middle end*/
 
 /*article*/
@@ -335,7 +344,7 @@ article h2{
 
 .iconfont{
     font-family:"iconfont" !important;
-    font-size:16px;font-style:normal;
+    font-size:.2rem;font-style:normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
