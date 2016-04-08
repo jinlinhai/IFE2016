@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+    <style>
+      .form-msg{
+        font-size: 14px;
+        color: #aaa;
+      }
+      input{
+        margin-bottom: 15px;
+      }
+      button{
+        cursor: pointer;
+      }
+
+      table{
+        margin-top: 5px;
+      }
+      tr,td{
+        border: 1px solid #ddd;
+      }
+      td{
+        padding: 5px;
+      }
+    </style>
+  </head>
+<body>
+
+  <div>
+    <label>城市名称：<input id="aqi-city-input" type="text"></label>
+    <span id="form-msg-error" class="form-msg">支持中文、英文</span><br>
+
+    <label>空气质量指数：<input id="aqi-value-input" type="text"></label>
+    <span id="form-num-error" class="form-msg">支持整数</span><br>
+    <button id="add-btn">确认添加</button>
+  </div>
+  <table id="aqi-table">
+  <!--
+    <tr>
+      <td>城市</td><td>空气质量</td><td>操作</td>
+    </tr>
+    <tr>
+      <td>北京</td><td>90</td><td><button>删除</button></td>
+    </tr>
+    <tr>
+      <td>北京</td><td>90</td><td><button>删除</button></td>
+    </tr>
+   -->
+  </table>
+    <script src="js/task_2_16.js"></script>
+</body>
+</html>
