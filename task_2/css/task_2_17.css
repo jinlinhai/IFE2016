@@ -1,0 +1,22 @@
+.container{
+    position: relative;
+    margin: 20px auto 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+    min-height: 565px;
+}
+
+.aqi-chart-wrap{
+    position: absolute;
+    width: 1400px;
+    left: 50%;
+    margin-left: -700px;
+    bottom: 0;    
+    text-align: center;
+}
+
+.aqi-chart-wrap div{
+    display: inline-block;
+    background: yellow;
+    margin-right: 1px;
+}
