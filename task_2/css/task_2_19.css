@@ -1,0 +1,47 @@
+fieldset{
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+}
+
+#delleft{
+    margin-left: 25px;
+}
+
+#random{
+    margin-left: 25px;
+}
+
+
+#data-wrap{
+    position: relative;
+    min-height: 300px;
+    margin: 30px 10px;
+    padding-top: 50px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+}
+
+#data-wrap ul{
+    position: relative;
+    position: absolute;
+    width: 1200px;
+    margin: 0;
+    left: 50%;
+    margin-left: -600px;
+    bottom: 0;
+}
+
+#data-wrap ul li{
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 18px;
+    background: red;
+}
+
+
+
