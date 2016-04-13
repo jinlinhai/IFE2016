@@ -78,7 +78,7 @@ function renderChart(){
 //随机生成50个10-100的数字
 function randomBuildData(){
   charList=[];
-  for (var i = 0; i < 60; i++) {
+  for (var i = 0; i < 50; i++) {
     charList.push(Math.ceil(Math.random()*100));
   }
 }
