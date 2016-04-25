@@ -2,78 +2,69 @@ $(function(){
     var dragging=false;
     var _x,_y;
 
+
     /**
-     * 弹出浮出层
-     * 禁止页面出现滚动
+     * 弹出登陆框
      */
-    function showLogin(){
+     function showLogin(){
         $('.mask').show();
         $('.popover').slideDown(200);
-        $(window).scroll(function(){
-            $(window).scrollTop(0);
-        });
     }
 
-    //当页面打开时弹出登录
-    showLogin();
-
-    //点击登录时弹出
-    $('.login').click(showLogin);
-
     /**
-     * 关闭浮出层
-     * 当浮出层显示时，点击关闭按钮、点击浮出层以外的部分，默认为关闭浮出层
-     * 解除禁止页面出现滚动
+     * 关闭登陆框
      */
-    $('.close,.mask').click(function(){
+    function hideLogin(){
         $('.mask').hide();
         $('.popover').slideUp(200);
-        $(window).unbind();
-    });
+    }
 
     /**
-     * 记录鼠标按下时的坐标
+     * 拖拽
      */
-    $('.popover').mousedown(function(e){
+     function drag(e){
         dragging=true;
-        _x=e.pageX-parseInt($(this).offset().left);
-        _y=e.pageY-parseInt($(this).offset().top);
-    });
+        // 光标按下时光标和面板之间的距离
+        _x=e.pageX-$(this).offset().left;
+        _y=e.pageY-$(this).offset().top;
 
-    /**
-     * 浮出层的拖拽，移动浮出窗口位置
-     * 限制浮出层不溢出浏览器窗口
-     * 开始拖拽时浮出层透明显示
-     */
-    $(document).mousemove(function(e){
+        this.setCapture && this.setCapture();
+        $(document).bind('mousemove',mouseMove).bind('mouseup',mouseUp);
+
+    }
+
+    //按下鼠标后移动
+    function mouseMove(e){
         if (dragging) {
             var x=e.pageX-_x,
-                y=e.pageY-_y,
-                maxW=$(window).width()-$('.popover').width();
-                maxH=$(window).height()-$('.popover').height();
+            y=e.pageY-_y,
+            //限制拖拽不可溢出文档
+            maxW=$(document).width()-$('.popover').width(),
+            maxH=$(document).height()-$('.popover').height();
 
-                if (x<0) {
-                    x=0;
-                }else if (x>maxW) {
-                    x=maxW;
-                }
+            x=x<0?0:x;
+            x=x>maxW?maxW:x;
+            y=y<0?0:y;
+            y=y>maxH?maxH:y;
 
-                if (y<0) {
-                    y=0;
-                }else if (y>maxH) {
-                    y=maxH;
-                }
-
-            $('.popover').fadeTo(10,0.8);
             $('.popover').offset({left:x,top:y});
-            return false;
+            return false;                    
         }
-    /**
-     * 鼠标释放停止拖拽
-     * 恢复浮出层不透明度 
-     */
-    }).mouseup(function(e) {
+    }
+
+    //释放鼠标
+    function mouseUp(e){
         dragging=false;
-        $('.popover').fadeTo(20,1);
-    });
+        $('.popover').releaseCapture && $('.popover').releaseCapture();
+        $('document').unbind('mousemove',mouseMove).unbind('mouseup',mouseUp);
+    }
+
+    //页面加载后弹出登录框
+    showLogin();
+    //点击’登录‘弹出登录框
+    $('.login').click(showLogin);
+    //点击’关闭‘、遮罩关闭登录框
+    $('.close,.mask').click(hideLogin);
+    //登陆框拖拽
+    $('.popover').mousedown(drag);
 });
