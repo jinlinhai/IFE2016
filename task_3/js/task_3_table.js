@@ -68,15 +68,16 @@ Createtable.prototype={
     },
     //添加排序事件
     addEvent: function(){
+        var that=this;
         document.getElementById(this.id).addEventListener('click',function(e){
             var index;
             var target=e.target;
             if (target.className==='up') {
                 index=target.parentNode.childNodes[0].nodeValue;
-                table1.sortTop(index);                
+                that.sortTop(index);                
             }else if (target.className==='down') {
                 index=target.parentNode.childNodes[0].nodeValue;
-                table1.sortDown(index); 
+                that.sortDown(index); 
             }
         });
     }
