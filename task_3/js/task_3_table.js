@@ -45,8 +45,7 @@ Createtable.prototype={
 
             th=document.createElement('tr');            
             for (var i = 0; i < len; i++) {
-                td="";
-                td+='<td>'+a.名字+'</td>'+'<td>'+a.语文+'</td>'+'<td>'+a.数学+'</td>'+'<td>'+a.英语+'</td>'+'<td>'+a.总分+'</td>';
+                td='<td>'+a.名字+'</td>'+'<td>'+a.语文+'</td>'+'<td>'+a.数学+'</td>'+'<td>'+a.英语+'</td>'+'<td>'+a.总分+'</td>';
             }
             th.innerHTML=td;
             table.appendChild(th);
