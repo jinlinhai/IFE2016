@@ -1,0 +1,37 @@
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0;
+}
+
+.theahBg{
+    color: #fff;
+    background: #333;
+}
+
+td{
+    position: relative;
+    width: 120px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+.up,.down{
+    position: absolute;
+    right: 10%;
+    width: 12px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.up{
+    top: 18%;
+    background:  url(../images/up.png) no-repeat;
+}
+
+.down{
+    bottom: 18%;
+    background: url(../images/down.png) no-repeat;
+}
