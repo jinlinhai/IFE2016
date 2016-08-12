@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        div{ display: flex; justify-content: space-around; align-items: center; border: 1px solid #000; background: #fff;}
+        #parentNode { width: 500px; height: 200px; }
+        .childNode{ width: 45%; height: 150px; }
+        .childItem{ width: 40%; height: 80px; }
+        .item{ width: 35%; height: 50px; }
+        #startbtn,#tip{margin-top: 5px;}
+        #tip{ display: inline-block; margin: 0 150px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div id="parentNode">
+        <div class="childNode">
+            <div class="childItem">
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="childItem">
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+        <div class="childNode">
+                <div class="childItem">
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="childItem">
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+    </div>
+    <button id="startbtn">开始遍历</button>
+    <span id="tip">点击开始遍历</span>        
+    <script src="js/task_2_22.js"></script>
+</body>
+</html>
