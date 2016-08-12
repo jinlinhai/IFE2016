@@ -9,8 +9,8 @@
         .childNode{ width: 45%; height: 150px; }
         .childItem{ width: 40%; height: 80px; }
         .item{ width: 35%; height: 50px; }
-        #startbtn,#tip{margin-top: 5px;}
-        #tip{ display: inline-block; margin: 0 150px; font-size: 12px; }
+        button{margin: 5px 10px;}
+        #tip{ width: 500px; margin-top: 10px; font-size: 12px; text-align: center; }
     </style>
 </head>
 <body>
@@ -36,8 +36,10 @@
             </div>
         </div>
     </div>
-    <button id="startbtn">开始遍历</button>
-    <span id="tip">点击开始遍历</span>        
+    <button id="prebtn">先序遍历</button>
+    <button id="inbtn">中序遍历</button>
+    <button id="posbtn">后序遍历</button>
+    <p id="tip">点击开始遍历</p>        
     <script src="js/task_2_22.js"></script>
 </body>
 </html>
