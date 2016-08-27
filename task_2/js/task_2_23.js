@@ -66,19 +66,19 @@
         nodeList[i].style.background = 'blue';
         timer = setInterval(function(){
             if (i < len) {
-                i++;
-                nodeList[i].style.background = 'blue';
-                nodeList[i-1].style.background = '#fff';
-                tip.innerHTML = '遍历中...';
-
                 if (event && event.target.id == 'search') {
                     var oTxt = document.getElementById('keyword').value;
                     if(nodeList[i].firstChild.data.trim() == oTxt){
                         nodeList[i].style.background = 'red';
                         clearInterval(timer);
+                        tip.innerHTML = '遍历完成！';
                         return;
                     }
-                }
+                }   
+                i++;
+                nodeList[i].style.background = 'blue';
+                nodeList[i-1].style.background = '#fff';
+                tip.innerHTML = '遍历中...';
             }else{
                 clearInterval(timer);
                 nodeList[i].style.background = '#fff';
