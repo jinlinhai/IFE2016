@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        div{ display: flex; justify-content: space-around; align-items: center; border: 1px solid #000; background: #fff; font-size: 12px;  }
+        #parentNode { width: 1200px; height: 250px; }
+        .childNode{ width: 47%; height: 200px; }
+        .childItem{ width: 45%; height: 120px; }
+        .item{ width: 35%; height: 50px; }
+        button{margin: 5px 10px;}
+        #tip{ width: 500px; margin-top: 10px; font-size: 12px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div id="parentNode">js
+        <div class="childNode">string
+            <div class="childItem">number
+                <div class="item">boolean</div>
+                <div class="item">undefined</div>
+            </div>
+            <div class="childItem">object
+                <div class="item">null</div>
+                <div class="item">array</div>
+            </div>
+        </div>
+        <div class="childNode">date
+                <div class="childItem">RegExp
+                <div class="item">global</div>
+                <div class="item">math</div>
+            </div>
+            <div class="childItem">window
+                <div class="item">location</div>
+                <div class="item">navigator</div>
+                <div class="item">history</div>
+            </div>
+            <div class="childItem">dom
+                <div class="item">node</div>
+                <div class="item">document</div>
+            </div>
+        </div>
+    </div>
+    <button id="prebtn">先序遍历</button>
+    <button id="inbtn">中序遍历</button>
+    <button id="posbtn">后序遍历</button>
+    <p> 
+        <input type="text" value=""/ id="keyword">
+        <input type="button" name="search" value="search" id="search">
+    </p>
+    <p id="tip">点击开始遍历</p>        
+    <script src="js/task_2_23.js"></script>
+</body>
+</html>
