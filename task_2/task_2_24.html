@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        div{ display: flex; justify-content: space-around; align-items: center; border: 1px solid #000; background: #fff; font-size: 12px;  }
+        #parentNode { width: 1300px; height: 200px; margin-bottom: 20px; }
+        #parentNode div{ padding: 20px 10px; margin: 0 3px; }
+        button{margin: 5px 10px;}
+        #tip{ width: 500px; margin-top: 10px; font-size: 12px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div id="parentNode">js
+        <div>string
+            <div>number
+                <div>boolean</div>
+                <div>undefined</div>
+            </div>
+            <div>object
+                <div>null</div>
+                <div>array</div>
+            </div>
+        </div>
+        <div>date
+                <div>RegExp
+                <div>global</div>
+                <div>math</div>
+            </div>
+            <div>window
+                <div>location</div>
+                <div>navigator</div>
+                <div>history</div>
+            </div>
+            <div>dom
+                <div>node</div>
+                <div>document</div>
+            </div>
+        </div>
+    </div>
+    <button id="prebtn">先序遍历</button>
+    <button id="inbtn">中序遍历</button>
+    <button id="posbtn">后序遍历</button>
+    <button id="deletebtn">删除选中节点</button>
+    <p> 
+        <input type="text" value="" id="keyword"/>
+        <input type="button" value="search" id="search"/>
+        <input type="button" value="添加子节点" id="addbtn"/>
+    </p>
+    <p id="tip">点击开始遍历</p>        
+    <script src="js/task_2_24.js"></script>
+</body>
+</html>
